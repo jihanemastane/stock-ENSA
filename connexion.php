@@ -1,1 +1,8 @@
-
+<?php
+	try{
+		$pdo=new PDO("mysql:host=localhost;dbname=bd1","root","");
+	}
+	catch(PDOException $e){
+		echo $e->getMessage();
+	}
+?>
